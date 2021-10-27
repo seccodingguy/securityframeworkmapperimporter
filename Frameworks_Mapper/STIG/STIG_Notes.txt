@@ -1,0 +1,41 @@
+﻿
+STIG
+- id
+- groupid
+- descr (<GropuDescription>)
+
+STIG_RULE
+- id
+- ruleid*
+- severity
+- weight
+- version
+- title*
+- descr (<VulnDiscussion>)
+- ident (CCI link)
+- fixdescr (used if split > 2 OR if there is not a separate UI and CLI fix steps)
+
+STIG_FIX
+- id
+- fixtext
+
+STIG_CHECK
+- id
+- checkid (check[system])
+
+STIG_UI_STEPS
+- id
+- uisteps => fixtext/check-content with Split(via UI:,via CLI:) using the via UI:
+
+STIG_CLI_STEPS
+- id
+- clisteps => fixtext/check-content with Split(via UI:,via CLI:) using the via CLI:
+
+STIG_FIX_UISTEPS_XREF
+STIG_CHECK_UISTEPS_XREF
+STIG_FIX_CLISTEPS_XREF
+STIG_CHECK_CLISTEPS_XREF
+
+STIG_RULES_XREF
+STIG_FIXES_XREF
+STIG_CHECKS_XREF
